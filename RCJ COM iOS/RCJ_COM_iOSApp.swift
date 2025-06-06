@@ -5,7 +5,7 @@
 //  Created by Fabian Weller on 05.06.2025.
 //
 
-import SwiftUI
+/*import SwiftUI
 
 @main
 struct RCJ_COM_iOSApp: App {
@@ -14,4 +14,4 @@ struct RCJ_COM_iOSApp: App {
             ContentView()
         }
     }
-}
+}*/
