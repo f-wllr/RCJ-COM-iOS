@@ -66,4 +66,31 @@ class BLEManager: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeriph
         let data = message.rawValue.data(using: .utf8)!
         peripheral.writeValue(data, for: characteristic, type: .withResponse)
     }
+    
+    func startScanning() {
+        discoveredPeripherals = []
+        if centralManager.state == .poweredOn {
+            centralManager.scanForPeripherals(withServices: nil)
+        }
+    }
+    
+    func connectTo(macAddress: String) {
+        guard let peripheral = discoveredPeripherals.first(where: {
+            $0.identifier.uuidString.lowercased() == macAddress.lowercased()
+        }) else {
+            print("Peripheral with UUID \(macAddress) not found")
+            return
+        }
+
+        connect(to: peripheral)
+    }
+
+    func disconnect() {
+        if let peripheral = connectedPeripheral {
+            centralManager.cancelPeripheralConnection(peripheral)
+            connectedPeripheral = nil
+            writeCharacteristic = nil
+        }
+    }
+
 }
