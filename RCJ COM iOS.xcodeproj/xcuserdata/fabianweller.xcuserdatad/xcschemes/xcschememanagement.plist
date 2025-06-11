@@ -7,7 +7,35 @@
 		<key>RCJ COM iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>RCJ COM iOSTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>RCJ COM iOSUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>48A212C12DF1AA5600C0CE16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>48A212CE2DF1AA5800C0CE16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>48A212D82DF1AA5800C0CE16</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
