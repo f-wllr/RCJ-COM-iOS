@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "CF12DEE7-2CDD-4F93-818B-3D6A52942660",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:RCJ COM iOS.xcodeproj",
+      "identifier" : "48A212C12DF1AA5600C0CE16",
+      "name" : "RCJ COM iOS"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:RCJ COM iOS.xcodeproj",
+        "identifier" : "48A212CE2DF1AA5800C0CE16",
+        "name" : "RCJ COM iOSTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:RCJ COM iOS.xcodeproj",
+        "identifier" : "48A212D82DF1AA5800C0CE16",
+        "name" : "RCJ COM iOSUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
